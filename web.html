@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalSolutions - Atención al Cliente</title>
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #0a3d62, #1e3799);
+            color: white;
+            padding: 40px 20px 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            width: 180px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* NAV */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #0a3d62;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #1e3799;
+        }
+
+        /* SECCIONES */
+        section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            animation: fadeIn 0.8s ease;
+        }
+
+        h2 {
+            color: #0a3d62;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* TARJETAS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 10px;
+            transition: 0.3s;
+            border-left: 5px solid #1e3799;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: #e6ecff;
+        }
+
+        /* BOTONES */
+        .btn {
+            display: inline-block;
+            padding: 14px 22px;
+            background: #1e3799;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4a69bd;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        /* ANIMACIONES */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>DigitalSolutions</h1>
+    <p>Tecnología de Última Generación · Atención al Cliente Premium</p>
+</header>
+
+<nav>
+    <a href="#contacto">Contacto</a>
+    <a href="#devoluciones">Devoluciones</a>
+    <a href="#garantias">Garantías</a>
+    <a href="#faq">FAQ</a>
+    <a href="#empresa">Sobre Nosotros</a>
+</nav>
+
+<section id="contacto">
+    <h2>📞 Contacto Directo</h2>
+    <p>Estamos disponibles para ayudarte en cualquier momento. Nuestro equipo de soporte está formado por especialistas certificados en soluciones digitales.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Atención General</h3>
+            <p><strong>Teléfono:</strong> +34 900 123 456</p>
+            <p><strong>Email:</strong> contacto@digitalsolutions.com</p>
+            <p><strong>Horario:</strong> L-V 9:00 - 20:00</p>
+        </div>
+
+        <div class="card">
+            <h3>Soporte Técnico</h3>
+            <p><strong>Teléfono:</strong> +34 955 789 321</p>
+            <p><strong>Email:</strong> soporte@digitalsolutions.com</p>
+            <p>Especialistas en software, hardware y licencias digitales.</p>
+        </div>
+
+        <div class="card">
+            <h3>Departamento de Facturación</h3>
+            <p><strong>Teléfono:</strong> +34 910 456 789</p>
+            <p><strong>Email:</strong> facturacion@digitalsolutions.com</p>
+            <p>Consultas sobre pagos, facturas y métodos de cobro.</p>
+        </div>
+    </div>
+
+    <a class="btn" href="mailto:contacto@digitalsolutions.com">Enviar un correo</a>
+</section>
+
+<section id="devoluciones">
+    <h2>🔄 Política de Devoluciones</h2>
+    <p>Nuestra política está diseñada para ofrecer transparencia y seguridad en cada compra.</p>
+
+    <h3>Plazos y Condiciones</h3>
+    <ul>
+        <li>Dispones de <strong>30 días naturales</strong> desde la recepción del producto.</li>
+        <li>El producto debe estar en perfecto estado y con su embalaje original.</li>
+        <li>El reembolso se procesa en un máximo de 7 días tras recibir el producto.</li>
+    </ul>
+
+    <h3>Productos no retornables</h3>
+    <ul>
+        <li>Licencias digitales activadas.</li>
+        <li>Software con clave utilizada.</li>
+        <li>Productos personalizados o configurados a medida.</li>
+    </ul>
+
+    <a class="btn" href="#contacto">Solicitar devolución</a>
+</section>
+
+<section id="garantias">
+    <h2>🛡️ Garantías</h2>
+    <p>Todos nuestros productos cuentan con garantía oficial y soporte técnico especializado.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Garantía Estándar</h3>
+            <p>2 años de garantía en productos físicos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Garantía Digital</h3>
+            <p>Activación segura y soporte remoto.</p>
+        </div>
+
+        <div class="card">
+            <h3>Garantía Extendida</h3>
+            <p>Disponible para productos premium.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faq">
+    <h2>❓ Preguntas Frecuentes</h2>
+
+    <h3>¿Cuánto tarda el soporte en responder?</h3>
+    <p>Normalmente menos de 24 horas laborables.</p>
+
+    <h3>¿Puedo cancelar un pedido?</h3>
+    <p>Sí, siempre que no haya sido enviado.</p>
+
+    <h3>¿Qué métodos de pago aceptan?</h3>
+    <p>Tarjetas, PayPal y transferencias bancarias.</p>
+
+    <a class="btn" href="#contacto">Hablar con un agente</a>
+</section>
+
+<section id="empresa">
+    <h2>🏢 Sobre DigitalSolutions</h2>
+    <p>Somos una empresa líder en soluciones tecnológicas, especializada en software, licencias digitales y soporte técnico avanzado. Nuestro compromiso es ofrecer un servicio rápido, seguro y profesional.</p>
+
+    <p>Más de <strong>15 años de experiencia</strong> nos avalan, con miles de clientes satisfechos en toda Europa.</p>
+
+    <a class="btn" href="#contacto">Contactar con la empresa</a>
+</section>
+
+<footer>
+    © 2026 DigitalSolutions – Atención al Cliente · Todos los derechos reservados
+</footer>
+
+</body>
+</html>
